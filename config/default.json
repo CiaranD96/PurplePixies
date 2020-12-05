@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://Ciaran:IL5Du4yPuIgHuiPo@purplepixies.ey90f.mongodb.net/PurplePixies?retryWrites=true&w=majority",
+  "jwtSecret": "PurplePixiesSuperSecretQToken"
+}
