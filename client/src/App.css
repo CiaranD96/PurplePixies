@@ -2,9 +2,10 @@
 :root {
   --primary-color: #892cdc;
   --dark-color: #161616;
+  --background-color: #1f1f1f;
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
-  --success-color: #52057b;
+  --success-color: #bc6ff1;
 }
 
 * {
@@ -17,7 +18,7 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #1f1f1f;
+  background-color: var(--background-color);
   color: #fff;
 }
 
@@ -274,6 +275,7 @@ button {
 
 .table th {
   background: var(--light-color);
+  color: var(--dark-color);
 }
 
 /* Navbar */
