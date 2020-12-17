@@ -487,14 +487,11 @@ button {
   .profile-grid {
     grid-template-areas:
       'top'
-      'about'
-      'exp'
-      'edu'
-      'github';
+      'char';
   }
 
-  .profile-about .skills {
-    flex-direction: column;
+  .char-card {
+    width: 100%;
   }
 
   .dash-buttons a {
