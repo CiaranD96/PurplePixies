@@ -22,7 +22,7 @@ const EditProfile = ({
       skills: loading || !profile.skills ? '' : profile.skills.join(','),
       bio: loading || !profile.bio ? '' : profile.bio,
     });
-  }, [loading]);
+  }, [loading, getCurrentProfile]);
 
   const { skills, bio } = formData;
 

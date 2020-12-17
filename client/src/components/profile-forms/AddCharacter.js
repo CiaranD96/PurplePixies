@@ -127,4 +127,4 @@ AddCharacter.propTypes = {
   addCharacter: PropTypes.func.isRequired,
 };
 
-export default connect(null, { addCharacter })(AddCharacter);
+export default connect(null, { addCharacter })(withRouter(AddCharacter));
