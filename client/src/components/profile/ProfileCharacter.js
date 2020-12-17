@@ -5,7 +5,7 @@ const ProfileCharacter = ({
   character: { Name, Race, Class, Level, Realm, MainSpec, OffSpec },
 }) => {
   return (
-    <div className='profile-char'>
+    <div className='bg-dark char-card'>
       <h3 className='text-primary'>
         Name: <span className='text-white'>{Name}</span>
       </h3>

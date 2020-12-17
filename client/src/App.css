@@ -377,24 +377,16 @@ button {
   font-size: 1.3rem;
 }
 
-/** change profile-exp to profile-character **/
 .profile-char {
-  /* grid-area: char; */
+  grid-area: char;
 }
 
-.profile-char h2 {
-  margin-bottom: 1rem;
-}
-
-.profile-char > div {
+.char-card {
   margin-bottom: 1rem;
   padding: 0.8rem;
   border: 1px solid var(--primary-color);
   border-radius: 5px;
-}
-
-.profile-char p {
-  margin: 0.5rem 0;
+  width: 50%;
 }
 
 /* Posts Page */
