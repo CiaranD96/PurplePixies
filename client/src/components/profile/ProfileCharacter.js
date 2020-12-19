@@ -32,7 +32,7 @@ const ProfileCharacter = ({
 };
 
 ProfileCharacter.propTypes = {
-  character: PropTypes.array.isRequired,
+  character: PropTypes.object.isRequired,
 };
 
 export default ProfileCharacter;

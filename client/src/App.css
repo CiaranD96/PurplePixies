@@ -390,16 +390,14 @@ button {
 }
 
 /* Posts Page */
-.post-form .post-form-header {
-  background: var(--primary-color);
-  padding: 0.5rem;
-}
 
 .post {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-gap: 2rem;
   align-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
 }
 
 .post > div:first-child {
@@ -408,6 +406,7 @@ button {
 
 .post img {
   width: 100px;
+  height: 100px;
 }
 
 .post .comment-count {
