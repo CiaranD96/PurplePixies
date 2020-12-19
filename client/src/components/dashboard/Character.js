@@ -5,35 +5,42 @@ import { deleteCharacter } from '../../actions/profile';
 
 const Character = ({ character, deleteCharacter }) => {
   const characters = character.map((char) => (
-    <tr key={char._id}>
-      <td>{char.Name}</td>
-      <td className='hide-sm'>{char.Class}</td>
-      <td className='hide-sm'>{char.Level}</td>
-      <td>
-        <button
-          className='btn btn-danger'
-          onClick={() => deleteCharacter(char._id)}
-        >
-          Delete
-        </button>
-      </td>
-    </tr>
+    <div key={char._id} className='char-card bg-dark'>
+      <h4 className='text-primary'>
+        Name: <span className='text-white'>{char.Name}</span>
+      </h4>
+      <h4 className='text-primary'>
+        Race: <span className='text-white'>{char.Race}</span>
+      </h4>
+      <h4 className='text-primary'>
+        Class: <span className='text-white'>{char.Class}</span>
+      </h4>
+      <h4 className='text-primary'>
+        Level: <span className='text-white'>{char.Level}</span>
+      </h4>
+      <h4 className='text-primary'>
+        Realm: <span className='text-white'>{char.Realm}</span>
+      </h4>
+      <h4 className='text-primary'>
+        MainSpec: <span className='text-white'>{char.MainSpec}</span>
+      </h4>
+      <h4 className='text-primary'>
+        OffSpec: <span className='text-white'>{char.OffSpec}</span>
+      </h4>
+      <br />
+      <button
+        className='btn btn-danger'
+        onClick={() => deleteCharacter(char._id)}
+      >
+        Delete
+      </button>
+    </div>
   ));
 
   return (
     <Fragment>
-      <h2 className='my-2'>My Characters</h2>
-      <table className='table'>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th className='hide-sm'>Class</th>
-            <th className='hide-sm'>Level</th>
-            <th />
-          </tr>
-        </thead>
-        <tbody>{characters}</tbody>
-      </table>
+      <h2 className='my-2'>Characters</h2>
+      <div>{characters}</div>
     </Fragment>
   );
 };
