@@ -1,4 +1,3 @@
 {
-  "mongoURI": "mongodb+srv://Ciaran:IL5Du4yPuIgHuiPo@purplepixies.ey90f.mongodb.net/PurplePixies?retryWrites=true&w=majority",
-  "jwtSecret": "PurplePixiesSuperSecretQToken"
+  "Mongo URI and JWT secret would go in here but the purpose of having the code public on github they have been removed."
 }
